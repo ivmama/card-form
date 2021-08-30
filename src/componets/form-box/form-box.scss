@@ -1,0 +1,33 @@
+.form-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.3em 2em;
+
+    &__label {
+        font-weight: 700;
+        margin-bottom: 0.5em;
+    }
+    &__input-wrapper {
+        position: relative;
+        width: 100%;
+    }
+    
+    &__input {
+        border: none;
+        width: 100%;
+        border-bottom: 0.1em solid rgb(4, 0, 238);
+        position: relative;
+        &.isError {
+            border-color: tomato;
+            outline-color: tomato;
+        }
+    }
+    &__label-error {
+        position: absolute;
+        right: 0.5em;
+        top: 50%;
+        font-size: 0.8em;
+        color: tomato;
+        transform: translateY(-50%);
+    }
+}

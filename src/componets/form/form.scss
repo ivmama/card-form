@@ -1,0 +1,41 @@
+.form {
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    margin-bottom: 1em;
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  button {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+  }
+
+  &__btn {
+    align-self: flex-end;
+    padding: 0.3em 1em;
+    cursor: pointer;
+    border: 0.2em solid rgb(26, 3, 92);
+    background-color: transparent;
+    border-radius: 1em;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: rgb(26, 3, 92);
+      color: #fff
+    }
+
+    &:disabled {
+      pointer-events: none;
+      background-color: rgb(206, 206, 206);
+      border-color: rgb(109, 109, 109);
+    }
+
+
+  }
+}
