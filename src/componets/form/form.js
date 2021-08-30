@@ -63,6 +63,7 @@ const Form = () => {
       onSubmit={(e) => {
         e.preventDefault();
         setFormData(initialData());
+        onDisabled(!onCheckDisabled(initialData()));
         e.target.reset();
       }}
     >
